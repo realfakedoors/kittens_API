@@ -1,0 +1,8 @@
+<%= content_tag(:h1, @kitten.name) %>
+<%= content_tag(:h3, "#{@kitten.age} old") %>
+<%= content_tag(:h4, "Cuteness: #{@kitten.cuteness}") %>
+<%= content_tag(:h4, "Softness: #{@kitten.softness}") %>
+
+<%= link_to 'Edit',    edit_kitten_path(@kitten) %> |
+<%= link_to 'Back',    kittens_path %> |
+<%= link_to 'Destroy', @kitten, method: :delete, data: { confirm: 'Are you sure?' } %>
